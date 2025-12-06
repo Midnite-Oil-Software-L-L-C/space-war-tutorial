@@ -433,8 +433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isPersistent: 1
   _enableDebugLog: 0
-  _gameSessionInitializer: {fileID: 777206617}
-  _gameSessionCleanup: {fileID: 777206618}
+  _gameSessionInitializer: {fileID: 777206618}
+  _gameSessionCleanup: {fileID: 777206617}
   _cleanupDelay: 1
 --- !u!114 &777206617
 MonoBehaviour:
@@ -445,11 +445,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 777206614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a37fa87ec4fba94daaeaa00115f582a, type: 3}
+  m_Script: {fileID: 11500000, guid: e575379228af4b94883ba1e58aa63bbf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  _maxPlayers: 2
-  _enableDebugLog: 1
+  m_EditorClassIdentifier: Assembly-CSharp::MidniteOilSoftware.Multiplayer.SpaceWar.SpaceWarCleanUp
 --- !u!114 &777206618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,9 +457,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 777206614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87b9cb8f88c09dd45a0c36e0db2d5dcd, type: 3}
+  m_Script: {fileID: 11500000, guid: 57681c8cb554449289683bd520ce3fd7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::MidniteOilSoftware.Multiplayer.SpaceWar.SpaceWarGameSessionInitializer
+  _maxPlayers: 2
+  _enableDebugLog: 1
 --- !u!1 &848142707
 GameObject:
   m_ObjectHideFlags: 0
