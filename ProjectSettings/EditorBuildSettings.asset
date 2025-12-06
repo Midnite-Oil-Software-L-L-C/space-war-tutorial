@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_spacewar/Scenes/Main Menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/_spacewar/Scenes/Othello.unity
+    path: Assets/_spacewar/Scenes/Space War.unity
     guid: 1070d0fcdc24d72468d541a7d4d85b54
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

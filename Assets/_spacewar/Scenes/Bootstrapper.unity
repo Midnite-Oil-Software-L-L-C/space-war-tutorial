@@ -368,7 +368,7 @@ MonoBehaviour:
   _enableDebugLog: 1
   _mainMenuScene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
   _gameScene: {fileID: 102900000, guid: 1070d0fcdc24d72468d541a7d4d85b54, type: 3}
-  _gameSceneName: Othello
+  _gameSceneName: Space War
   _mainMenuSceneName: Main Menu
 --- !u!4 &503695636
 Transform:
