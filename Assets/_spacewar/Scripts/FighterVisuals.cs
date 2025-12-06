@@ -27,5 +27,4 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
     
         public Transform MuzzleTransform => _muzzleTransform;
     }
-
 }
