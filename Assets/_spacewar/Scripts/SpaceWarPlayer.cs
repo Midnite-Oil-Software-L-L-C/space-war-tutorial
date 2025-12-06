@@ -50,8 +50,8 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
             if (IsServer)
             {
                 _fighterIndex.Value = Random.Range(0, _fighterPrefabs.Length);
-                SetPlayerLayer();
             }
+            SetPlayerLayer();
 
             _fighterIndex.OnValueChanged += OnFighterIndexChanged;
 

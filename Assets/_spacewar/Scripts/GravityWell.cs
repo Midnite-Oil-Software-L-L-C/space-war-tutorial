@@ -15,9 +15,11 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
 
         public void RegisterAttractable(Attractable attractable)
         {
+            Debug.Log($"RegisterAttractable called on GravityWell {name} for Attractable {attractable?.name}, IsServer={IsServer}");
             if (!IsServer) return;
 
             if (!attractable || _registeredAttractables.Contains(attractable)) return;
+            Debug.Log($"Registered Attractable {attractable.name} to GravityWell {name}");
             _registeredAttractables.Add(attractable);
         }
 
@@ -74,6 +76,7 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
                 }
                 else
                 {
+                    Debug.Log($"Attracting Attractable {_registeredAttractables[i].name} from GravityWell {name}");
                     _registeredAttractables[i].Attract(_gravityStrength, _gravityRadius, transform.position);
                 }
             }

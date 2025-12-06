@@ -40,13 +40,14 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
             var forceMagnitude = gravityStrength * falloff;
 
             var force = directionToWell.normalized * forceMagnitude;
-            Debug.Log($"Attractable {name}: Applying force {force} towards gravity well at {gravityWellPosition}.");
-            if (_rigidbody)
+            if (_rigidbody && !_rigidbody.bodyType.Equals(RigidbodyType2D.Kinematic))
             {
+                Debug.Log($"Attractable {name}: Applying force {force} towards gravity well at {gravityWellPosition}.");
                 _rigidbody.AddForce(force, ForceMode2D.Force);
             }
             else
             {
+                Debug.Log($"Attractable {name}: Moving kinematic object by {force * Time.deltaTime} towards gravity well at {gravityWellPosition}.");
                 transform.position += force * Time.deltaTime;
             }
         }
