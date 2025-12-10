@@ -27,6 +27,13 @@ namespace MidniteOilSoftware.Multiplayer.SpaceWar
         public void Attract(float gravityStrength, float gravityRadius, Vector3 gravityWellPosition)
         {
             if (!IsServer) return;
+            AttractRPC(gravityStrength, gravityRadius, gravityWellPosition);
+        }
+        
+        [Rpc(SendTo.Owner)]
+        void AttractRPC(float gravityStrength, float gravityRadius, Vector3 gravityWellPosition)
+        {
+            if (!IsOwner) return;
             var currentPosition = transform.position;
             var directionToWell = gravityWellPosition - currentPosition;
             var distance = directionToWell.magnitude;
